@@ -17,7 +17,7 @@ Topics Covered:
  
  ## Definitions:
  
- ### try: / except:
+ ### try: / except: / finally:
  These blocks of code are used in conjunction to error handling 
  
     ``
@@ -27,6 +27,19 @@ Topics Covered:
     except <error you want to accept > as <alias/ palceholder>:
         (block of code)
         (block of code)
+     
+    finally:
+       block that runs after so maybe a print
+     
+    ``
+ ## Using open() and with()
+ When using open() you need to close the files you actually open 
+ 
+  - you can skip this step using 'with:'
+    ``
+     with open() as <placeholder>:
+     <placeholder>:
+        <placeholder>.readlines()
     ``
  
  ### Exceptions

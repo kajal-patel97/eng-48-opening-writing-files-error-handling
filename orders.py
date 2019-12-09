@@ -29,8 +29,25 @@ def open_print_close(file_name):
     finally: # finally is looked at the end, the last thing to check
         print('//// Programme Closing - execution done!')
 
+
+def open_and_write_txt(file, item):
+    try:
+        with open(file, 'a') as file_to_write:
+            file_to_write.write(item + '\n')
+
+
+    except FileNotFoundError as error:
+        print('Check your file and path')
+        print(error)
+
+    finally:
+        print('///Programme Closing -- execution done!')
+
 # open_print_txt_file('order.txt')
 # open_print_txt_file('order2.txt')
 
-open_print_close('order.txt')
-open_print_close('order2.txt')
+# open_print_close('order.txt')
+# open_print_close('order2.txt')
+# open_and_write_txt('order2.txt', 'Cupcake' )
+# open_and_write_txt('order2.txt', 'Oj with carrot')
+# open_and_write_txt('order2.txt', 'Eggs Benedict')
